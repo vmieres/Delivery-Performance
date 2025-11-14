@@ -6,3 +6,10 @@ Key Business Questions Answered:
 Does the data support the customer's claim of 90% on-time performance?
 Which delivery locations are the most problematic?
 Are delivery time windows realistic for worst-performing locations?
+### Business Problem
+A logistics customer believes they mantain:
+* 90% on-time delivery performance across their network
+* Minimal delays of only "a couple of hours at most" when drivers are late
+
+This analysis validates these claims and identifies areas for operational improvement using historical truckload data.
+
