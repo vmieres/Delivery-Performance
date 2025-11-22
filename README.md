@@ -60,6 +60,12 @@ Analysis Methodology
 * Handle missing values and data quality issues
 * Create calculated fields for analysis
 
+2. Performance Metrics Calculation (python)
+##### Key metrics calculated:
+- Delivery delay (hours) = Actual arrival - Window end time
+- On-time status = True if delay ≤ 0
+- Pickup dwell time = Departure time - Arrival time
+
 
 
 
