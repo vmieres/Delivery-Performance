@@ -52,6 +52,13 @@ Libraries Used:
 * seaborn         # Statistical data visualization
 * datetime        # Date and time handling
 
+Analysis Methodology
+1. Data Preprocessing
+
+* Load and inspect raw CSV data
+* Convert date/time strings to datetime objects
+* Handle missing values and data quality issues
+* Create calculated fields for analysis
 
 
 
