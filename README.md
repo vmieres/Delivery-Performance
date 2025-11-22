@@ -66,6 +66,13 @@ Analysis Methodology
 - On-time status = True if delay ≤ 0
 - Pickup dwell time = Departure time - Arrival time
 
+3. Statistical Analysis
+
+* Descriptive Statistics: Mean, median, standard deviation of delays
+* Percentage Analysis: On-time performance rates by location
+* Trend Analysis: Performance over time (monthly trends)
+* Variability Analysis: Standard deviation of delays by location
+
 
 
 
