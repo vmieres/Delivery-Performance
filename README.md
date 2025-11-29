@@ -73,6 +73,15 @@ Analysis Methodology
 * Trend Analysis: Performance over time (monthly trends)
 * Variability Analysis: Standard deviation of delays by location
 
+4. Diagnostic Testing
+
+Simulated optimal delivery scenario:
+
+* Driver arrives at pickup window start
+* Dwell time = 90th percentile by origin
+* Travel speed = 40 mph constant
+* Calculate if windows are achievable
+
 
 
 
