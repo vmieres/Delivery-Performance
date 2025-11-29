@@ -82,6 +82,8 @@ Simulated optimal delivery scenario:
 * Travel speed = 40 mph constant
 * Calculate if windows are achievable
 
+### Key Findings
+
 
 
 
