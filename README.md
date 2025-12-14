@@ -84,13 +84,43 @@ Simulated optimal delivery scenario:
 
 ### Key Findings
 Question 1: Overall Performance Validation
+
 On-Time Performance
 
-Actual Performance: 75% on-time
+* Actual Performance: 75% on-time
 
-Customer Claim: 90% on-time
+* Customer Claim: 90% on-time
 
-Conclusion: ❌ Claim Not Supported
+* Conclusion: ❌ Claim Not Supported
+
+Delay Analysis (for late deliveries)
+
+* Average Delay: 15.3 hours (25.0%)
+
+* Maximum Delay: 8824 hours
+
+* Customer Claim: "Couple of hours at most"
+
+* Conclusion: ❌ Claim Not Supported
+
+
+
+Question 2: Problem Locations Identified
+
+Bottom 5 Destinations by On-Time Performance
+
+Rank| Destination| On-Time %| Total Loads|
+
+1|    [499477]|    [0.0%]|     [11]|
+
+2|    [906049]|    [14.3%]|   [14]|
+
+3| [1288141]|[16.7%]| [12]|
+
+4|  [594983]| [20.0%]| [20]|
+
+5| [971635]| [25.0%]| [20]|
+
 
 
 
