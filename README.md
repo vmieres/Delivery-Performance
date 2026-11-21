@@ -1,6 +1,7 @@
+![Project Banner](banner.png)
 # Delivery-Performance
 ## Overview
-This project analyzes truckload delivery performance data to validate customer claims, identify operational bottlenecks, and provide data-driven recommendations for supply chain optimization. Using Python and advanced data analytics techniques, this analysis examines over 60,000 delivery records to assess on-time performance, pinpoint problem locations, and diagnose root causes of delivery delays.
+This project analyzes truckload delivery performance data to validate customer claims, identify operational bottlenecks, and provide data-driven recommendations for supply chain optimization. Using Python and advanced data analytics techniques, this analysis examines over 370 delivery records to assess on-time performance, pinpoint problem locations, and diagnose root causes of delivery delays.
 
 Key Business Questions Answered:       
 Does the data support the customer's claim of 90% on-time performance?
@@ -21,7 +22,7 @@ Data Source
   * sample_data3.csv
   * sample_data4.csv
 
-* Records: 60,000 truckload deliveries
+* Records: 400 truckload deliveries
 * Time Period: May 2020 - April 2021
 * Geographic Coverage: Multiple origin and destination locations across the network
 
@@ -51,6 +52,26 @@ Libraries Used:
 * matplotlib      # Data visualization
 * seaborn         # Statistical data visualization
 * datetime        # Date and time handling
+
+Development Environment
+- Jupyter Notebook - Interactive data analysis and visualization
+
+📁 Project Structure
+supply-chain-analysis/
+│
+├── data/
+│   └── sample_size.csv              # Raw dataset
+│
+├── notebooks/
+│   └── supply_chain_analysis.ipynb  # Main analysis notebook
+│
+├── visualizations/
+│   ├── on_time_performance.png      # Performance charts
+│   ├── problem_locations.png        # Location analysis
+│   └── diagnostic_results.png       # Diagnostic test results
+│
+├── README.md                        # Project documentation
+└── requirements.txt                 # Python dependencies
 
 Analysis Methodology
 1. Data Preprocessing
@@ -83,9 +104,9 @@ Simulated optimal delivery scenario:
 * Calculate if windows are achievable
 
 ### Key Findings
-Question 1: Overall Performance Validation
+#### Question 1: Overall Performance Validation
 
-On-Time Performance
+###### On-Time Performance
 
 * Actual Performance: 75% on-time
 
@@ -93,7 +114,7 @@ On-Time Performance
 
 * Conclusion: ❌ Claim Not Supported
 
-Delay Analysis (for late deliveries)
+###### Delay Analysis (for late deliveries)
 
 * Average Delay: 15.3 hours (25.0%)
 
@@ -105,9 +126,9 @@ Delay Analysis (for late deliveries)
 
 
 
-Question 2: Problem Locations Identified
+#### Question 2: Problem Locations Identified
 
-Bottom 5 Destinations by On-Time Performance
+##### Bottom 5 Destinations by On-Time Performance
 
 Rank| Destination| On-Time %| Total Loads|
 
@@ -122,7 +143,24 @@ Rank| Destination| On-Time %| Total Loads|
 5| [971635]| [25.0%]| [20]|
 
 
+##### Top 5 Most Unpredictable Destinations
+Rank|	Destination	|Std Dev (hours)|	Avg Delay|
+1	[1012707]	[1513.75]	[257.21]
+2	[53363]	[766.84]	[77.90]
+3	[1302285]	[525.75]	[-73.65]
+4	[1284775]	[450.80]	[-92.27]
+5	[2061913]	[425.49]	[-80.78]
 
+#### Question 3: Diagnostic Test Results
+
+##### Worst Performing Location: Destination [499477]
+
+Current On-Time Rate: [0.0]%
+Feasibility with Optimal Execution: 100.0]%
+Average Time Difference: [-2.83] hours
+Conclusion: Windows are ✅ Realistic. Most loads could meet the window with optimal execution.
+
+📊 ### Visualizations
 
 
 
