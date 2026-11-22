@@ -145,11 +145,11 @@ Rank| Destination| On-Time %| Total Loads|
 
 ##### Top 5 Most Unpredictable Destinations
 Rank|	Destination	|Std Dev (hours)|	Avg Delay|
-1	[1012707]	[1513.75]	[257.21]
-2	[53363]	[766.84]	[77.90]
-3	[1302285]	[525.75]	[-73.65]
-4	[1284775]	[450.80]	[-92.27]
-5	[2061913]	[425.49]	[-80.78]
+1|	[1012707]	[1513.75]	[257.21]
+2|	[53363]	[766.84]	[77.90]
+3|	[1302285]	[525.75]	[-73.65]
+4|	[1284775]	[450.80]	[-92.27]
+5|	[2061913]	[425.49]	[-80.78]
 
 #### Question 3: Diagnostic Test Results
 
@@ -161,7 +161,17 @@ Average Time Difference: [-2.83] hours
 Conclusion: Windows are ✅ Realistic. Most loads could meet the window with optimal execution.
 
 📊 ### Visualizations
+1. On-Time Performance Dashboard
 
+Performance Dashboard Four-panel visualization showing overall performance, delay distribution, monthly trends, and day-of-week analysis
+
+2. Problem Location Analysis
+
+Problem Locations Comparison of worst-performing and most unpredictable delivery destinations
+
+3. Diagnostic Test Results
+
+Diagnostic Results Distribution analysis showing window feasibility for the worst-performing location
 
 
 
