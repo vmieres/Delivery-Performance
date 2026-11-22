@@ -56,7 +56,9 @@ Libraries Used:
 Development Environment
 - Jupyter Notebook - Interactive data analysis and visualization
 
-📁 Project Structure
+### 📁  Project Structure
+
+```text
 supply-chain-analysis/
 │
 ├── data/
@@ -72,29 +74,33 @@ supply-chain-analysis/
 │
 ├── README.md                        # Project documentation
 └── requirements.txt                 # Python dependencies
+```
 
-Analysis Methodology
-1. Data Preprocessing
+### Analysis Methodology
+
+**1. Data Preprocessing**
 
 * Load and inspect raw CSV data
 * Convert date/time strings to datetime objects
 * Handle missing values and data quality issues
 * Create calculated fields for analysis
 
-2. Performance Metrics Calculation (python)
+**2. Performance Metrics Calculation**
+
+(python)
 ##### Key metrics calculated:
 - Delivery delay (hours) = Actual arrival - Window end time
 - On-time status = True if delay ≤ 0
 - Pickup dwell time = Departure time - Arrival time
 
-3. Statistical Analysis
+**3. Statistical Analysis**
 
 * Descriptive Statistics: Mean, median, standard deviation of delays
 * Percentage Analysis: On-time performance rates by location
 * Trend Analysis: Performance over time (monthly trends)
 * Variability Analysis: Standard deviation of delays by location
 
-4. Diagnostic Testing
+**4. Diagnostic Testing**
 
 Simulated optimal delivery scenario:
 
@@ -103,7 +109,7 @@ Simulated optimal delivery scenario:
 * Travel speed = 40 mph constant
 * Calculate if windows are achievable
 
-### Key Findings
+### 📈 Key Findings
 #### Question 1: Overall Performance Validation
 
 ###### On-Time Performance
@@ -130,46 +136,46 @@ Simulated optimal delivery scenario:
 
 ##### Bottom 5 Destinations by On-Time Performance
 
-Rank| Destination| On-Time %| Total Loads|
-
-1|    [499477]|    [0.0%]|     [11]|
-
-2|    [906049]|    [14.3%]|   [14]|
-
-3| [1288141]|[16.7%]| [12]|
-
-4|  [594983]| [20.0%]| [20]|
-
-5| [971635]| [25.0%]| [20]|
+Rank | Destination | On-Time % | Total Loads |
+| :--- | :--- | :---: | :---: |
+|1|    499477|    0.0%|     11|
+|2|    906049|    14.3%|   14|
+|3| 1288141| 16.7%| 12|
+|4|  594983|20.0%| 20|
+|5| 971635| 25.0%| 20|
 
 
 ##### Top 5 Most Unpredictable Destinations
-Rank|	Destination	|Std Dev (hours)|	Avg Delay|
-1|	[1012707]	[1513.75]	[257.21]
-2|	[53363]	[766.84]	[77.90]
-3|	[1302285]	[525.75]	[-73.65]
-4|	[1284775]	[450.80]	[-92.27]
-5|	[2061913]	[425.49]	[-80.78]
+Rank |	Destination	| Std Dev (hours)|	Avg Delay|
+| :--- | :--- | :---: | :---: |
+|1|	1012707	| 1513.75	| 257.21 |
+|2|	53363 |	766.84	| 77.90
+|3|	1302285 |	525.75 |	[-73.65]
+|4|	1284775 |	450.80 |	[-92.27]
+|5|	2061913 | 425.49 |	[-80.78]
 
 #### Question 3: Diagnostic Test Results
 
 ##### Worst Performing Location: Destination [499477]
 
-Current On-Time Rate: [0.0]%
-Feasibility with Optimal Execution: 100.0]%
-Average Time Difference: [-2.83] hours
+Current On-Time Rate: 0.0%
+
+Feasibility with Optimal Execution: 100.0%
+Average Time Difference: -2.83 hours
+
 Conclusion: Windows are ✅ Realistic. Most loads could meet the window with optimal execution.
 
 📊 ### Visualizations
-1. On-Time Performance Dashboard
+
+**1. On-Time Performance Dashboard**
 
 Performance Dashboard Four-panel visualization showing overall performance, delay distribution, monthly trends, and day-of-week analysis
 
-2. Problem Location Analysis
+**2. Problem Location Analysis**
 
 Problem Locations Comparison of worst-performing and most unpredictable delivery destinations
 
-3. Diagnostic Test Results
+**3. Diagnostic Test Results**
 
 Diagnostic Results Distribution analysis showing window feasibility for the worst-performing location
 
