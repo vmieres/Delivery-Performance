@@ -1,4 +1,4 @@
-![Project Banner](banner.png)
+![Project Banner](Banner.png)
 # Delivery-Performance
 ## Overview
 This project analyzes truckload delivery performance data to validate customer claims, identify operational bottlenecks, and provide data-driven recommendations for supply chain optimization. Using Python and advanced data analytics techniques, this analysis examines 59,099 truckload deliveries (sample case-study data) that tests  delivery records to assess on-time performance, pinpoint problem locations, and diagnose root causes of delivery delays.
